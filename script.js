@@ -172,6 +172,7 @@ registrationForm.addEventListener("submit", (event) => {
   if (!registrationForm.checkValidity()) {
     const firstInvalid = registrationForm.querySelector(":user-invalid");
     firstInvalid.focus();
+    return
   }
 
   registrationForm.reset()
